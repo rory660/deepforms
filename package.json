@@ -1,0 +1,26 @@
+{
+  "name": "deepforms",
+  "version": "1.0.0",
+  "description": "Send deep nested JSON objects from web forms",
+  "main": "deepforms.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rory660/deepforms.git"
+  },
+  "keywords": [
+    "json",
+    "forms",
+    "nested",
+    "object",
+    "deep"
+  ],
+  "author": "Rory Brown",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rory660/deepforms/issues"
+  },
+  "homepage": "https://github.com/rory660/deepforms#readme"
+}

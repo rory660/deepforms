@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>deepforms Example</title>
+
+    <script src="../deepforms.js"></script>
+    <script>
+        const deepFormData = (new URLSearchParams(window.location.search)).get("deepFormData")
+        console.log(deepFormData)
+        if(deepFormData){
+            window.alert("Deep Form data:\n" + deepFormData)
+        }
+    </script>
+</head>
+<body>
+    <form method="GET" action="getFormExample.html" id="exampleForm">
+        <label for="name">Enter your name:</label><br>
+        <input type="text" name="name" id="name"></input>
+
+        <h2>What car do you drive?</h2>
+        <label for="car.manufacturer">Manufacturer:</label><br>
+        <input type="text" name="car.manufacturer" id="car.manufacturer"></input><br>
+        <label for="car.model">Model:</label><br>
+        <input type="text" name="car.model" id="car.model"></input><br>
+        <label for="car.color">Color:</label><br>
+        <input type="text" name="car.color" id="car.color"></input>
+
+        <h2>What are your 3 favourite things?</h2>
+        <input type="text" name="favouriteThings"></input><br>
+        <input type="text" name="favouriteThings"></input><br>
+        <input type="text" name="favouriteThings"></input>
+    </form>
+    <button onclick = "window.deepforms.submitDeepForm('exampleForm')">Submit</button>
+</body>
+</html>
