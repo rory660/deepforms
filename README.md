@@ -1,5 +1,3 @@
-
-
 ![deepforms](https://github.com/rory660/deepforms/blob/master/img/deepformsCentered.png?raw=true)
 
 # deepforms
