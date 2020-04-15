@@ -148,3 +148,7 @@ The JSON string can be found in the `deepFormJSON` field of the request body (or
 ```js
 const deepFormData = JSON.parse(req.body.deepFormJSON)
 ```
+
+## Author
+
+[deepforms is created and maintained by Rory Brown.](https://www.rorybrown.info)
