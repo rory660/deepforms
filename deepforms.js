@@ -22,7 +22,7 @@
         
         const field = document.createElement("input")
         field.type="hidden"
-        field.name="deepFormData"
+        field.name="deepFormJSON"
         field.value=json
         jsonForm.appendChild(field)
         document.body.appendChild(jsonForm)
@@ -105,8 +105,8 @@
 
     // parsing middleware for deep forms. Places an object containing the deep form data in req.deepFormData
     const parser = function(req, res, next){
-        if("body" in req && "deepformData" in req.body){
-            req.deepFormData = JSON.parse(req.body.deepFormData)
+        if("body" in req && "deepformJSON" in req.body){
+            req.deepFormData = JSON.parse(req.body.deepFormJSON)
         }
     }
 
