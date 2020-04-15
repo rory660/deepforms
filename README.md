@@ -1,6 +1,6 @@
 ![deepforms](https://github.com/rory660/deepforms/blob/master/img/deepformsCentered.png?raw=true)
 
-Send deep nested JSON objects from HTML forms, in one function call.
+Send deep nested JSON objects from HTML forms, in a single function call.
 
 # Features
 
