@@ -111,7 +111,7 @@ Button elements inside forms will default to `type="submit"`, causing them to su
 Form data is always sent as the following key/value pair:
 
 ```
-deepFormJSON = <JSON stirng containing form data>
+deepFormJSON = <JSON string containing form data>
 ```
 
 ### Express Middleware
