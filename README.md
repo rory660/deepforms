@@ -125,11 +125,11 @@ The JSON string can be found in the `deepFormJSON` field of the request body (or
 const deepFormData = JSON.parse(req.body.deepFormJSON)
 ```
 
-## API
+# API
 
 When imported as a frontend JS library:
 
-#### `submitDeepForm(formId)`
+## `submitDeepForm(formId)`
 
 Arguments : The id of the form element to be submitted.
 
@@ -137,7 +137,7 @@ Submits the form as a deep nested JSON string containing the form data.
 
 When imported as a Node.js module:
 
-#### `parser(req, res, next)`
+## `parser(req, res, next)`
 
 Arguments: request object, response object, next function in middleware chain
 
