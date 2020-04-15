@@ -9,6 +9,26 @@ Send deep nested JSON objects from HTML forms, in one function call.
 - Can be imported as an express middleware in node.js to parse the sent JSON
 - Submits form data with the same method, action, target, etc as the original form, with no extra code required
 
+# API
+
+_When imported as a frontend JS library:_
+
+### `submitDeepForm(formId)`
+
+Arguments : The id of the form element to be submitted.
+
+Submits the form as a deep nested JSON string containing the form data.
+
+---
+
+_When imported as a Node.js module:_
+
+### `parser(req, res, next)`
+
+Arguments: request object, response object, next function in middleware chain
+
+Parses the deep form JSON string from `req.body.deepFormJSON` if it exists, and places the parsed object in `req.deepFormData`.
+
 # Usage
 
 ## Sending Forms
@@ -128,21 +148,3 @@ The JSON string can be found in the `deepFormJSON` field of the request body (or
 ```js
 const deepFormData = JSON.parse(req.body.deepFormJSON)
 ```
-
-# API
-
-When imported as a frontend JS library:
-
-### `submitDeepForm(formId)`
-
-Arguments : The id of the form element to be submitted.
-
-Submits the form as a deep nested JSON string containing the form data.
-
-When imported as a Node.js module:
-
-### `parser(req, res, next)`
-
-Arguments: request object, response object, next function in middleware chain
-
-Parses the deep form JSON string from `req.body.deepFormJSON` if it exists, and places the parsed object in `req.deepFormData`.
