@@ -27,7 +27,7 @@ _When imported as a Node.js module:_
 
 Arguments: request object, response object, next function in middleware chain
 
-Parses the deep form JSON string from `req.body.deepFormJSON` if it exists, and places the parsed object in `req.deepFormData`.
+Express middleware that parses the deep form JSON string from `req.body.deepFormJSON`, if it exists, and places the parsed object in `req.deepFormData`.
 
 # Usage
 
