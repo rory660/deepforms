@@ -1,7 +1,7 @@
 {
   "name": "deepforms",
   "version": "1.0.0",
-  "description": "Send deep nested JSON objects from web forms",
+  "description": "Send deep nested JSON objects from HTML forms, in a single function call",
   "main": "deepforms.js",
   "scripts": {
     "test": "mocha"
