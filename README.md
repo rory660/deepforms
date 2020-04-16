@@ -93,7 +93,7 @@ Clicking the button will cause the form to be parsed as an object:
 and sent as a JSON string to the "/submitForm" route. Deep form data is always sent as a key/value pair with the key `"deepFormJSON"` and the JSON string as the value. The example above would be sent as:
 
 ```json
-{"deepFormJSON" : '{"user":{"name":"testUser"},"color":["blue","red"]}"}'
+{"deepFormJSON" : "{"user":{"name":"testUser"},"color":["blue","red"]}"}
 ```
 
 ---
