@@ -1,4 +1,6 @@
-![deepforms](https://github.com/rory660/deepforms/blob/master/img/deepformsCentered.png?raw=true)
+[![deepforms](https://github.com/rory660/deepforms/blob/master/img/deepformsCentered.png?raw=true)](#)
+
+[![License: MIT](https://img.shields.io/badge/license-MIT-informational)](#) [![dependencies: None](https://img.shields.io/badge/dependencies-none-success)](#) [![CircleCI](https://circleci.com/gh/rory660/deepforms.svg?style=shield&circle-token=d5e081f54b8a54d62f5b2c213a1a88a1399786fc)](https://app.circleci.com/pipelines/github/rory660/deepforms)
 
 Send deep nested JSON-encoded objects from HTML forms, in a single function call.
 
@@ -90,8 +92,8 @@ Clicking the button will cause the form to be parsed as an object:
 
 and sent as a JSON string to the "/submitForm" route. Deep form data is always sent as a key/value pair with the key `"deepFormJSON"` and the JSON string as the value. The example above would be sent as:
 
-```json
-{"deepFormJSON" : "{'user':{'name':'testUser'},'color':['blue','red']}"}
+```
+deepFormJSON : '{"user":{"name":"testUser"},"color":["blue","red"]}}'
 ```
 
 ---
@@ -151,4 +153,4 @@ const deepFormData = JSON.parse(req.body.deepFormJSON)
 
 ## Author
 
-[deepforms is created and maintained by Rory Brown.](https://www.rorybrown.info)
+[deepforms is created and maintained by Rory Brown](https://www.rorybrown.info)
