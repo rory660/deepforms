@@ -1,5 +1,7 @@
 ![deepforms](https://github.com/rory660/deepforms/blob/master/img/deepformsCentered.png?raw=true)
 
+[![CircleCI](https://circleci.com/gh/rory660/deepforms.svg?style=shield&circle-token=d5e081f54b8a54d62f5b2c213a1a88a1399786fc)](https://app.circleci.com/pipelines/github/rory660/deepforms)
+
 Send deep nested JSON-encoded objects from HTML forms, in a single function call.
 
 # Features
