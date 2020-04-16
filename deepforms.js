@@ -132,11 +132,12 @@
     const parser = function(req, res, next){
         if(req === undefined || typeof req !== "object") throw new TypeError("req must be a valid request object")
         if(res === undefined || typeof res !== "object") throw new TypeError("res must be a valid response object")
-        if(next === undefined || typeof next !== "object") throw new TypeError("next must be a valid callback function")
+        if(next === undefined || typeof next !== "function") throw new TypeError("next must be a valid callback function")
 
-        if("body" in req && "deepformJSON" in req.body){
+        if("body" in req && "deepFormJSON" in req.body){
             req.deepFormData = JSON.parse(req.body.deepFormJSON)
         }
+        next()
     }
 
     const isNode = function(){
