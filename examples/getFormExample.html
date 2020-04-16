@@ -8,10 +8,10 @@
 
     <script src="../deepforms.js"></script>
     <script>
-        const deepFormData = (new URLSearchParams(window.location.search)).get("deepFormData")
-        console.log(deepFormData)
-        if(deepFormData){
-            window.alert("Deep Form data:\n" + deepFormData)
+        const deepFormJSON = (new URLSearchParams(window.location.search)).get("deepFormJSON")
+        console.log(deepFormJSON)
+        if(deepFormJSON){
+            window.alert("Deep Form data:\n" + deepFormJSON)
         }
     </script>
 </head>

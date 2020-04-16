@@ -5,7 +5,7 @@
     // in which each substring of the key (split on '.') represents the key for
     // each layer of object nesting.
     const submitDeepForm = function(formId){
-        if(formId === undefined || typeof form !== "string") throw new TypeError("formId must be a valid string")
+        if(formId === undefined || typeof formId !== "string") throw new TypeError("formId must be a valid string")
 
         console.log("Submitting form id: " + formId)
         const form = document.getElementById(formId)
@@ -33,7 +33,7 @@
 
     // Serializes a form as an object represented in a JSON string.
     const serializeDeepForm = function(form){
-        if(form === undefined || typeof form !== "object" || form.tagName !== "form") throw new TypeError("form must be a valid DOM form object")
+        if(form === undefined || typeof form !== "object" || form.tagName != "FORM") throw new TypeError("form must be a valid DOM form object")
 
         const arr = serializeFormAsArray(form)
         const obj = arrayToDeepObject(arr)
@@ -43,7 +43,7 @@
 
     // Serializes a form as an array containing key-value pairs.
     const serializeFormAsArray = function(form){
-        if(form === undefined || typeof form !== "object" || form.tagName !== "form") throw new TypeError("form must be a valid DOM form object")
+        if(form === undefined || typeof form !== "object" || form.tagName != "FORM") throw new TypeError("form must be a valid DOM form object")
         
         return Array.from(new FormData(form))
     }
