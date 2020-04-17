@@ -50,7 +50,7 @@ Express middleware that parses the deep form JSON string from `req.body.deepForm
 
 ## Sending Forms
 
-A form can be sent as a deep form by invoking `window.deepforms.submitDeepForm()`. Deep form data will be submitted as a single key `"deepFormData"` mapped to a JSON string containing the deep object.
+A form can be sent as a deep form by invoking `window.deepforms.submitDeepForm()`. Deep form data will be submitted as a single key `"deepFormJSON"` mapped to a JSON string containing the deep object.
 
 ### Field names
 
