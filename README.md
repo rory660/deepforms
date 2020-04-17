@@ -57,7 +57,7 @@ A form can be sent as a deep form by invoking `window.deepforms.submitDeepForm()
 Form field names can be written using '.' syntax to represent layers of nesting in an object. For example:
 
 ```html
-<input type = "text" name = "user.name" value = "testUser">
+<input type="text" name="user.name" value="testUser">
 ```
 
 will be entered into the form object as:
@@ -71,8 +71,8 @@ deepFormObject["user"]["name"] = "testUser";
 If multiple fields in the form share a name, then their values will be parsed as a list:
 
 ```html
-<input type = "text" name = "color" value = "blue">
-<input type = "text" name = "color" value = "red">
+<input type="text" name="color" value="blue">
+<input type="text" name="color" value="red">
 ```
 
 will be entered into the form object as:
@@ -86,10 +86,10 @@ deepFormObject["color"] = ["blue", "red"];
 In order to submit a form as a deep form, invoke `submitDeepForm` as follows:
 
 ```html
-<form id = "exampleForm" method = "POST" action = "/submitForm">
-    <input type = "text" name = "user.name" value = "testUser">
-    <input type = "text" name = "color" value = "blue">
-    <input type = "text" name = "color" value = "red">
+<form id="exampleForm" method="POST" action="/submitForm">
+    <input type="text" name="user.name" value="testUser">
+    <input type="text" name="color" value="blue">
+    <input type="text" name="color" value="red">
 </form>
 <button onclick="document.deepforms.submitDeepForm('exampleForm')">
 ```
