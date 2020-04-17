@@ -4,6 +4,21 @@
 
 Send deep nested JSON-encoded objects from HTML forms, in a single function call.
 
+# Installation
+
+_In the browser:_
+
+Include the script from a node CDN such as _jsdelivr_:
+```html
+<script src="https://cdn.jsdelivr.net/npm/deepforms@1.0.0/deepforms.min.js"></script>
+```
+
+---
+
+_As an Express middleware:_
+
+run `npm install deepforms` in your package and place `require("deepforms")` in your node script.
+
 # Features
 
 - Allows forms to be sent as JSON strings representing deep objects
